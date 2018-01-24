@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/delivery-estimation-service/delivery-estimation-service.iml" filepath="$PROJECT_DIR$/delivery-estimation-service/delivery-estimation-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menu-display/menu-display.iml" filepath="$PROJECT_DIR$/menu-display/menu-display.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-distribution-service/order-distribution-service.iml" filepath="$PROJECT_DIR$/order-distribution-service/order-distribution-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-payment-service/order-payment-service.iml" filepath="$PROJECT_DIR$/order-payment-service/order-payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-food-delivery.iml" filepath="$PROJECT_DIR$/spring-cloud-food-delivery.iml" />
+    </modules>
+  </component>
+</project>

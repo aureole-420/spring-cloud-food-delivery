@@ -1,0 +1,29 @@
+{
+  "customerName":"Tony Abbott",
+  "orderTime":"2018-01-12 18:21",
+  "address":"35 Stirling Highway, Crawley, WA 6009, Australia",
+  "orderItemsList":[
+    {
+      "dishName":"Beijing duck",
+      "price":"12.5",
+      "quantity":"1"
+    }, {
+      "dishName":"Mongolian Beef",
+      "price":"16",
+      "quantity":"2"
+    }, {
+      "dishName":"Spicy Chicken",
+      "price":"7",
+      "quantity":"4"
+    }, {
+      "dishName":"white rice",
+      "price":"1.0",
+      "quantity":"4"
+    }
+  ],
+  "orderNote":"More chili for the spicy chicken!",
+
+  "creditCardNumber":"2000 1000 2131 3131",
+  "creditCardExpiration":"08 18",
+  "cvcNumber":"345"
+}

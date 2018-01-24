@@ -1,0 +1,47 @@
+[
+
+  {
+    "id":"1feefe1",
+    "menuName":"Guangzhou Restaurant",
+    "menuItems": [
+      {
+        "itemId":"1",
+        "itemName":"chicken",
+        "itemPrice":"10"
+      },
+      {
+        "itemId":"2",
+        "itemName":"beef",
+        "itemPrice":"30"
+      },
+      {
+        "itemId":"3",
+        "itemName":"bok coy",
+        "itemPrice":"15"
+      }
+    ]
+  },
+
+  {
+    "id":"231323",
+    "menuName":"Beijing Restaurant",
+    "menuItems": [
+      {
+        "itemId":"4",
+        "itemName":"abc",
+        "itemPrice":"3000"
+      },
+      {
+        "itemId":"5",
+        "itemName":"def",
+        "itemPrice":"2000"
+      },
+      {
+        "itemId":"6",
+        "itemName":"hkfe",
+        "itemPrice":"1000"
+      }
+    ]
+  }
+
+]
