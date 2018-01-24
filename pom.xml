@@ -20,6 +20,7 @@
         <module>order-payment-service</module>
         <module>order-distribution-service</module>
         <module>delivery-estimation-service</module>
+        <module>platform</module>
     </modules>
 
     <dependencyManagement>

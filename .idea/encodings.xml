@@ -6,5 +6,8 @@
     <file url="file://$PROJECT_DIR$/menu-display" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-distribution-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-payment-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/food-delivery-hystrix-dashboard" charset="UTF-8" />
   </component>
 </project>

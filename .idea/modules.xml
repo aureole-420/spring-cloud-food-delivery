@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/delivery-estimation-service/delivery-estimation-service.iml" filepath="$PROJECT_DIR$/delivery-estimation-service/delivery-estimation-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform/eureka/eureka.iml" filepath="$PROJECT_DIR$/platform/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform/food-delivery-hystrix-dashboard/food-delivery-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/platform/food-delivery-hystrix-dashboard/food-delivery-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/menu-display/menu-display.iml" filepath="$PROJECT_DIR$/menu-display/menu-display.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-distribution-service/order-distribution-service.iml" filepath="$PROJECT_DIR$/order-distribution-service/order-distribution-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-payment-service/order-payment-service.iml" filepath="$PROJECT_DIR$/order-payment-service/order-payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform/platform.iml" filepath="$PROJECT_DIR$/platform/platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-food-delivery.iml" filepath="$PROJECT_DIR$/spring-cloud-food-delivery.iml" />
     </modules>
   </component>
