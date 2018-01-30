@@ -51,7 +51,7 @@ public class OrderPaymentRestController {
         if (!isPaymentValid) {
             // push message to FE through websocket -- that the payment failed.
 //            System.out.println("<Rest.processPayment> credit card service failed.");
-            log.info("<Rest.processPayment> credit card service failed.");
+            log.error("<Rest.processPayment> credit card service failed.");
         } else {
             // 0. save to the database.
             // 1. push message to FE through websocket -- that the payment is successful --- not implemented.
