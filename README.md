@@ -29,3 +29,20 @@ The spring-clould-food-delivery project is made of four micro-service, i.e.
 | platform/food-delivery-hystrix-dashboard | Service Circuit Breaker                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 
+## Testing
+------------
+### To launch the application:  
+
+* For mac/win user, start `docker-quickstart terminal`
+  * For mac users, run `docker-machine restart default` then `eval $(docker-machine env default)`
+* cd to `/running-information-service`. Run `docker-compose up` to start the docker container for MongoDB and RabbitMQ
+* Note: You might need to modify `spring.data.mongodb.uri` in `application.properties` for some microservices for successful connection with mongodb.
+
+### testing `menu-display` service
+
+* sample testing data: `spring-cloud-food-delivery/menu-display/src/main/resources/menuInfo.json`
+  - post menu, http.post `http://localhost:9010/upload` with Json data as request body.
+  - get menu, http.get `http://localhost:9010/menu/getAll`
+
+
+
