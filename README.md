@@ -38,11 +38,33 @@ The spring-clould-food-delivery project is made of four micro-service, i.e.
 * cd to `/running-information-service`. Run `docker-compose up` to start the docker container for MongoDB and RabbitMQ
 * Note: You might need to modify `spring.data.mongodb.uri` in `application.properties` for some microservices for successful connection with mongodb.
 
-### testing `menu-display` service
+### testing `menu-display` service (standalone)
 
 * sample testing data: `spring-cloud-food-delivery/menu-display/src/main/resources/menuInfo.json`
   - post menu, http.post `http://localhost:9010/upload` with Json data as request body.
   - get menu, http.get `http://localhost:9010/menu/getAll`
+  
+### testing `order-payment-service`,`order-distribution-service`,`delivery-estimation-service` services (Cloud native)
+* start `eureka-server`, `food-delivery-hystrix-dashboard`,`order-distribution-service`,`delivery-estimation-service`, `order-payment-service` sequentially.
+* Browse `http://localhost:8761/` for Eureka info page.
+* Browse `http://localhost:15672/` for RabbitMQ info page.
+* Browse `http://localhost:7979/hystix` for Hystrix info page.
+
+* Should find that all three services are registered on Eureka
+
+* sample testing data for *ordering*: `spring-cloud-food-delivery/order-payment-service/src/main/resources/OrderInfo.json`
+  - post order request: http.post `http://localhost:9011/orderInfo` with Json data as request body
+  - get order info: http.get `http://localhost:9011/orderInfo/retrieve`
+  
+* sample testing data for *payment*: `spring-cloud-food-delivery/order-payment-service/src/main/resources/PaymentInfo.json`
+  - post payment request: http.post `http://localhost:9011/paymentInfo` with Json data as request body
+  - Use original `PaymentInfo.json` for http.post will trigger message distribution. 1. Messages goes into RabbitMQ 2. Distribution service log `"Receiving validated paymentInfo from order-payment service: " + validatedPaymentInfo` 3. Delivery-estimation-service log `"<Consumer> Estimated delivery time: " + estimatedDeliveryTime` 
+  - Modify `PaymentInfo.json` (say increase CVC to 4 digits) for http.post will trigger erro log `<Rest.processPayment> credit card service failed.` 
+  
+* Shutting down any of the three services will not lead to service crash.
+
+  
+
 
 
 
